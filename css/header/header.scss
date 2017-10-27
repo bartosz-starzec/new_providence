@@ -1,0 +1,160 @@
+.header {
+    padding: 220px 0 510px;
+    background-image: url("../img/header/banner_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            &.title {
+                text-align: center;
+                font-size: 3.5em;
+                line-height: 72px;
+                font-weight: bold;
+                @media (max-width: 1000px) {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        p {
+            width: 60%;
+            &.text {
+                font-size: 1.2em;
+                text-align: center;
+                color: rgb(140, 143, 148);
+            }
+        }
+        @media (max-width: 1000px) {
+            p {
+                width: 90%;
+            }
+        }
+    }
+    .watch {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 210px;
+        a {
+            text-align: left;
+            padding: 16px 35px;
+            border-radius: 30px;
+            border: 1px solid rgb(218, 220, 223);
+            color: black;
+            text-decoration-style: none;
+            text-decoration-line: none;
+            img {
+                width: 30px;
+                margin-right: 10px;
+            }
+            &:hover {
+                text-decoration-line: none;
+            }
+        }
+    }
+    .iphone {
+        img {
+            position: absolute;
+            left: 50%;
+            margin-left: -175px;
+            bottom: -310px;
+            @media (max-width: 500px) {
+                width: 300px;
+                margin-left: -145px;
+                bottom: -300px;
+            }
+        }
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(240, 240, 240);
+        /* Fallback color */
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Black w/ opacity */
+        overflow: hidden;
+        display: none;
+        .modalcontent {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            height: 500px;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            // padding: 30px;
+            span {
+                &.close {
+                    color: black;
+                    // margin-top: -40px;
+                    float: right;
+                    font-size: 30px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+            iframe {
+                width: 800px;
+                height: 500px;
+            }
+            @media (min-width: 600px) and (max-width: 1000px) {
+                width: 500px;
+                height: 300px;
+                span {
+                    padding-bottom: -30px;
+                }
+                iframe {
+                    margin-top: 50px;
+                    // transform: scale(0.7);
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+            @media (max-width: 600px) {
+                width: 400px;
+                height: 350px;
+                // span {
+                //     padding-top: 30px;
+                // }
+                iframe {
+                    margin-top: 50px;
+                    // transform: scale(0.7);
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+            @media (max-width: 500px) {
+                width: 370px;
+                height: 350pc;
+                iframe {
+                    margin-top: 50px;
+                    // transform: scale(0.7);
+                    width: 370px;
+                    height: 350px;
+                }
+            }
+            @media (max-width: 400px) {
+                width: 270px;
+                height: 250pc;
+                iframe {
+                    margin-top: 50px;
+                    // transform: scale(0.7);
+                    width: 270px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

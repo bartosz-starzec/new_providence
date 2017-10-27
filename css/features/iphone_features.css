@@ -1,0 +1,100 @@
+.iphone_features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: flex-start; }
+  @media (max-width: 1150px) {
+    .iphone_features {
+      flex-direction: column-reverse; } }
+  @media screen and (min-width: 500px) and (max-width: 1150px) {
+    .iphone_features {
+      margin-left: 40px; } }
+  @media (max-width: 500px) {
+    .iphone_features {
+      padding-left: 10px; } }
+  .iphone_features .left .iphone {
+    width: 800px;
+    height: 600px;
+    margin-left: -100px;
+    margin-right: 20px;
+    background-image: url("../img/features/iphone.png");
+    background-size: 90%;
+    background-repeat: no-repeat; }
+    @media (max-width: 1150px) {
+      .iphone_features .left .iphone {
+        width: 90%;
+        height: 65vw;
+        margin-left: 0; } }
+    @media (max-width: 1000px) {
+      .iphone_features .left .iphone {
+        width: 90%;
+        height: 65vw;
+        margin-left: 0; } }
+    @media (max-width: 500px) {
+      .iphone_features .left .iphone {
+        margin-top: 50px; } }
+    @media (max-width: 400px) {
+      .iphone_features .left .iphone {
+        margin-top: 80px; } }
+    @media (max-width: 300px) {
+      .iphone_features .left .iphone {
+        margin-top: 120px; } }
+  .iphone_features .right {
+    width: 420px;
+    height: 500px; }
+    .iphone_features .right p.title {
+      margin-top: 90px;
+      font-size: 2.5em;
+      margin-bottom: 50px; }
+      .iphone_features .right p.title span {
+        display: block; }
+        @media (max-width: 1150px) {
+          .iphone_features .right p.title span {
+            display: inline; } }
+    .iphone_features .right p.textFirst {
+      margin-bottom: 15px;
+      color: #8c8f94;
+      font-size: 1.1em; }
+    .iphone_features .right p.textSecond {
+      color: #8c8f94;
+      font-size: 1.1em; }
+    .iphone_features .right .buttons {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 20px; }
+      @media (max-width: 500px) {
+        .iphone_features .right .buttons {
+          flex-direction: column; } }
+      .iphone_features .right .buttons a {
+        text-decoration: none;
+        margin-right: 20px; }
+        .iphone_features .right .buttons a.try {
+          padding: 10px 15px;
+          border-radius: 30px;
+          background-color: #267df4;
+          color: white; }
+          @media (max-width: 500px) {
+            .iphone_features .right .buttons a.try {
+              width: 180px;
+              margin-bottom: 10px; } }
+          .iphone_features .right .buttons a.try img {
+            padding-left: 30px;
+            vertical-align: text-top; }
+          .iphone_features .right .buttons a.try:hover {
+            background-color: #2664f4; }
+        .iphone_features .right .buttons a.learn {
+          border-radius: 30px;
+          padding: 10px 20px;
+          color: black;
+          border: 1px solid #dadcdf;
+          background-color: transparent; }
+          .iphone_features .right .buttons a.learn:hover {
+            background-color: #d2d2d2; }
+          @media (max-width: 500px) {
+            .iphone_features .right .buttons a.learn {
+              width: 125px; } }
+    @media (max-width: 1150px) {
+      .iphone_features .right {
+        width: 90%; } }
+
+/*# sourceMappingURL=iphone_features.css.map */

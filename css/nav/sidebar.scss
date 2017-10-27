@@ -1,0 +1,172 @@
+.active {
+    transform: translateX(0px);
+}
+
+.active2 {
+    transform: translateX(-380px);
+}
+
+.sidebar {
+    z-index: 15;
+    width: 380px;
+    background-color: #292b30;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // transform: translateX(-400px);
+    transition: all 1s ease;
+    ul {
+        margin-top: 35px;
+        li {
+            padding: 5px 0;
+            list-style-type: none;
+            &:last-child {
+                margin-top: 20px;
+            }
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: none;
+                    color: #4c7cef;
+                }
+                &.one {
+                    padding: 10px 12px;
+                    background-color: rgb(38, 125, 244);
+                    border-radius: 30px;
+                    color: #fff;
+                    &:hover {
+                        background-color: rgb(38, 100, 244);
+                        color: #fff;
+                    }
+                    img {
+                        vertical-align: text-top;
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+    /*********************
+    **********************
+    ***** sidebar/logo ******
+    **********************
+    **********************/
+    .logo {
+        display: inline-block;
+        height: 20px;
+        text-align: left;
+        // border: 1px solid red;
+        padding-left: 20px;
+        margin-top: 25px;
+        p {
+            color: white;
+            &.logo {
+                text-transform: uppercase;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    /*********************
+    **********************
+    ***** sidebar/btn ******
+    **********************
+    **********************/
+    .button {
+        cursor: pointer;
+        position: absolute;
+        top: 33px;
+        right: 25px;
+        width: auto;
+        -webkit-transition: all .7s ease;
+        -moz-transition: all .7s ease;
+        -ms-transition: all .7s ease;
+        -o-transition: all .7s ease;
+        transition: all .7s ease;
+        .bar {
+            display: block;
+            height: 3px;
+            width: 15px;
+            background-color: #fff;
+            margin: 5px auto;
+        }
+        .top {
+            transform: translateY(20px) translateX(-3px) rotateZ(45deg);
+        }
+        .middle {
+            transform: translateY(12px) translateX(-3px) rotateZ(-45deg);
+        }
+    }
+    @media (max-width: 1000px) {
+        width: 300px;
+    }
+}
+
+
+/*********************
+    ***sidebar/social ****
+    **********************
+    **********************/
+
+@mixin social {
+    color: #ccc;
+    cursor: pointer;
+    &:hover {
+        color: white;
+    }
+}
+
+@mixin padding {
+    padding-right: 15px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 22px;
+    left: 40px;
+    width: 200px;
+    height: 25px;
+    // border: 1px solid yellow;
+    .icon-socials {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-end;
+        .twitter {
+            @include padding;
+            i {
+                @include social;
+            }
+        }
+        .fb {
+            @include padding;
+            i {
+                @include social;
+            }
+        }
+        .gplus {
+            @include padding;
+            i {
+                @include social;
+            }
+        }
+        .tumblr {
+            @include padding;
+            i {
+                @include social;
+            }
+        }
+        .pinterest {
+            @include padding;
+            i {
+                @include social;
+            }
+        }
+        .linkedin {
+            i {
+                @include social;
+            }
+        }
+    }
+}

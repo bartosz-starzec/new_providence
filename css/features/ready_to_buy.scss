@@ -1,0 +1,128 @@
+.ready_to_buy {
+    background-color: rgb(245, 245, 248);
+    padding-top: 30px;
+    padding-bottom: 80px;
+    .logo {
+        margin-right: auto;
+        margin-left: auto;
+        p.logo {
+            font-size: 0.9em;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(168, 169, 175);
+            padding-bottom: 15px;
+        }
+    }
+    .header_buy {
+        margin-right: auto;
+        margin-left: auto;
+        p.text {
+            text-align: center;
+            font-size: 3em;
+            padding-bottom: 30px;
+        }
+    }
+    .form {
+        padding-bottom: 50px;
+        text-align: center;
+        form {
+            input[type=text] {
+                outline: none;
+                width: 530px;
+                height: 30px;
+                padding: 7px;
+                padding-left: 15px;
+                border: 1px solid rgb(203, 203, 206);
+                border-radius: 30px;
+                margin-right: -24px;
+                box-sizing: content-box;
+                @media (max-width: 600px) {
+                    width: 400px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                @media (max-width: 450px) {
+                    width: 280px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                @media (max-width: 350px) {
+                    width: 260px;
+                }
+            }
+            input[type=submit] {
+                &.arrow {
+                    background: url("../img/features/arrow.png");
+                    background-repeat: no-repeat;
+                    background-position: 90% 50%;
+                    text-align: left;
+                    width: 150px;
+                    height: 40px;
+                    margin-left: -134px;
+                    background-color: rgb(111, 199, 84);
+                    border: none;
+                    color: rgb(248, 252, 247);
+                    border-radius: 30px;
+                    padding: 5px 0;
+                    padding-left: 15px;
+                    &:focus {
+                        outline: none;
+                    }
+                    @media (max-width: 600px) {
+                        margin-top: 20px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                &:hover {
+                    background-color: rgb(111, 190, 84);
+                }
+            }
+            // input::placeholder {
+            //     text-transform: uppercase;
+            // }
+        }
+    }
+    .downloadFrom {
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            &.download {
+                text-align: center;
+                text-transform: uppercase;
+                color: rgb(201, 204, 206);
+            }
+        }
+    }
+    .appstore {
+        text-align: center;
+        button[type=submit] {
+            width: 210px;
+            height: 60px;
+            border: none;
+            border-radius: 30px;
+            background-color: #000;
+            background-image: url("../img/nav/apple.png");
+            background-repeat: no-repeat;
+            background-position: 10% 40%;
+            background-size: 15%;
+            padding-top: 5px;
+            p {
+                padding-left: 15px;
+                &.text {
+                    padding-top: 5px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 0.8em;
+                    span {
+                        margin-left: 0px;
+                        margin-top: -7px;
+                        display: block;
+                        font-size: 1.8em;
+                    }
+                }
+            }
+        }
+    }
+}

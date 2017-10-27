@@ -1,0 +1,94 @@
+.map_features {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    padding-bottom: 70px;
+    @media (max-width: 1150px) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: 500px) and (max-width: 1000px) {
+        margin-left: 40px;
+    }
+    @media(max-width: 500px) {
+        padding-left: 10px;
+    }
+    // border: 1px solid blue;
+    .left {
+        @media (max-width: 1150px) {
+            width: 90%;
+        }
+        width: 400px;
+        // margin-right: 50px;
+        p {
+            &.title {
+                margin-top: 10px;
+                font-size: 2.5em;
+                margin-bottom: 50px;
+                span {
+                    display: block;
+                    @media (max-width: 1150px) {
+                        display: inline;
+                    }
+                }
+            }
+            &.textFirst {
+                margin-bottom: 15px;
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+            &.textSecond {
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+        }
+        .partners {
+            p {
+                &.partner {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 0.9em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            .logos {
+                width: 350px;
+                .logo {
+                    // border: 1px solid blue;
+                    height: 40px;
+                    background-image: url("../img/features/dropbox.png"), url("../img/features/evernote.png");
+                    background-repeat: no-repeat;
+                    background-position: left, right;
+                    width: 90%;
+                    @media (max-width: 500px) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        // border: 1px solid red;
+        .map_feature {
+            width: 750px;
+            height: 450px;
+            margin-right: -200px;
+            background-image: url("../img/features/map.png");
+            background-position: right;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            @media (max-width: 1000px) {
+                margin-right: 0;
+                margin-top: 20px;
+                height: 60vw;
+                width: 100%;
+            }
+            @media (max-width: 1150px) {
+                margin-right: 0;
+                margin-top: 20px;
+                height: 50vw;
+                width: 100%;
+            }
+        }
+    }
+}

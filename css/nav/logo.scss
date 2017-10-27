@@ -1,0 +1,14 @@
+.logo {
+    height: 20px;
+    text-align: center;
+    // border: 1px solid red;
+    padding-left: 10px;
+    p {
+        &.logo {
+            text-transform: uppercase;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

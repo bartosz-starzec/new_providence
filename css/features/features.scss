@@ -1,0 +1,76 @@
+    .features {
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-around;
+        @mixin column {
+            width: 500px;
+            height: 400px;
+            padding-bottom: 30px;
+            padding-right: 10px;
+            @media (max-width: 1000px) {
+                width: 90%;
+            }
+            // border: 1px solid red;
+        }
+        @mixin icon {
+            display: block;
+            width: 60px;
+            height: 60px;
+            // border: 1px solid blue;
+            background-repeat: no-repeat;
+            margin-bottom: 45px;
+        }
+        @mixin text {
+            &.title {
+                font-size: 1.5em;
+                margin-bottom: 30px;
+            }
+            &.textFirst {
+                margin-bottom: 15px;
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+            &.textSecond {
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+        }
+        .left {
+            // margin-right: -5px;
+            @include column;
+            .lock {
+                @include icon;
+                background-image: url("../img/features/Lock.png");
+            }
+            p {
+                @include text;
+            }
+        }
+        .right {
+            @include column;
+            .clock {
+                @include icon;
+                background-image: url("../img/features/clock.png");
+            }
+            p {
+                @include text;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 500px) and (max-width: 1000px) {
+            margin-left: 40px;
+        }
+        @media(max-width: 500px) {
+            padding-left: 10px;
+        }
+        hr {
+            &.hrstyle {
+                border: 0;
+                height: 0;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(244, 244, 244, 0.3);
+            }
+        }
+    }

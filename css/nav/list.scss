@@ -1,0 +1,21 @@
+@mixin hover {
+    color: #33ACFF;
+}
+
+.list {
+    height: 20px;
+    padding-left: 0;
+    // border: 1px solid red;
+    a {
+        text-align: left;
+        padding-right: 25px;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            @include hover;
+        }
+    }
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}

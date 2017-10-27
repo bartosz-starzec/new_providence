@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    .container-fluid {
+        // border: 1px solid red;
+        overflow: hidden;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+        .nav_start {
+            background-color: transparent;
+            padding: 50px 10px 30px;
+        }
+        .nav {
+            z-index: 2;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0; // width: 100vw;
+            // border: 1px solid red;
+            /*******************
+            ********************
+            ****** hamburger ***
+            ********************
+            ********************/
+            @import "nav/hamb";
+            /*******************
+            ********************
+            ****** sidebar ***
+            ********************
+            ********************/
+            @import "nav/sidebar";
+            /*******************
+            ********************
+            ****** lista *******
+            ********************
+            ********************/
+            @import "nav/list";
+            /*******************
+            ********************
+            ****** logo ********
+            ********************
+            ********************/
+            @import "nav/logo";
+            /*******************
+            ********************
+            ** help/contact ****
+            ********************
+            ********************/
+            @import "nav/contact";
+            @media (max-width: 1000px) {
+                padding: 40px 0;
+            }
+        }
+        /*******************
+            ********************
+            ****** header ******
+            ********************
+            ********************/
+        @import "header/header";
+        /*******************
+            ********************
+            ****** features ******
+            ********************
+            ********************/
+        @import "features/features";
+        /*******************
+            ********************
+            ****** iphone_features ******
+            ********************
+            ********************/
+        @import "features/iphone_features";
+        /*******************
+            ********************
+            ****** map_features ******
+            ********************
+            ********************/
+        @import "features/map_features";
+        /*******************
+            ********************
+            ****** iphone_screens ******
+            ********************
+            ********************/
+        @import "features/iphone_screens";
+        /*******************
+            ********************
+            ****** ready_to_buy ******
+            ********************
+            ********************/
+        @import "features/ready_to_buy";
+        /*******************
+            ********************
+            ****** customers ******
+            ********************
+            ********************/
+        @import "features/customers";
+        /*******************
+            ********************
+            ****** plan ******
+            ********************
+             ********************/
+        @import "features/plan";
+        /*******************
+            ********************
+            ****** subscribe ******
+            ********************
+            ********************/
+        @import "features/subscribe";
+        /*******************
+            ********************
+            ****** footer ******
+            ********************
+            ********************/
+        @import "features/footer";
+    }
+}
+
+.sticky {
+    // width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    background-color: white;
+    padding: 40px 10px 40px;
+}

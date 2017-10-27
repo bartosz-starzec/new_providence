@@ -1,0 +1,119 @@
+.iphone_features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 1150px) {
+        flex-direction: column-reverse;
+    }
+    @media screen and (min-width: 500px) and (max-width: 1150px) {
+        margin-left: 40px;
+    }
+    @media(max-width: 500px) {
+        padding-left: 10px;
+    }
+    // border: 1px solid red;
+    .left {
+        .iphone {
+            width: 800px;
+            height: 600px;
+            margin-left: -100px;
+            margin-right: 20px;
+            // border: 1px solid red;
+            background-image: url("../img/features/iphone.png");
+            background-size: 90%;
+            background-repeat: no-repeat;
+            @media (max-width: 1150px) {
+                width: 90%;
+                height: 65vw;
+                margin-left: 0;
+            }
+            @media (max-width: 1000px) {
+                width: 90%;
+                height: 65vw;
+                margin-left: 0;
+            }
+            @media (max-width: 500px) {
+                margin-top: 50px;
+            }
+            @media (max-width: 400px) {
+                margin-top: 80px;
+            }
+            @media (max-width: 300px) {
+                margin-top: 120px;
+            }
+        }
+    }
+    .right {
+        width: 420px;
+        height: 500px;
+        // border: 1px solid red;
+        p {
+            &.title {
+                margin-top: 90px;
+                font-size: 2.5em;
+                margin-bottom: 50px;
+                span {
+                    display: block;
+                    @media (max-width: 1150px) {
+                        display: inline;
+                    }
+                }
+            }
+            &.textFirst {
+                margin-bottom: 15px;
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+            &.textSecond {
+                color: rgb(140, 143, 148);
+                font-size: 1.1em;
+            }
+        }
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 20px;
+            @media (max-width: 500px) {
+                flex-direction: column;
+            }
+            a {
+                text-decoration: none;
+                margin-right: 20px;
+                &.try {
+                    padding: 10px 15px;
+                    border-radius: 30px;
+                    background-color: rgb(38, 125, 244);
+                    color: white;
+                    @media (max-width: 500px) {
+                        width: 180px;
+                        margin-bottom: 10px;
+                    }
+                    img {
+                        padding-left: 30px;
+                        vertical-align: text-top;
+                    }
+                    &:hover {
+                        background-color: rgb(38, 100, 244);
+                    }
+                }
+                &.learn {
+                    border-radius: 30px;
+                    padding: 10px 20px;
+                    color: black;
+                    border: 1px solid rgb(218, 220, 223);
+                    background-color: transparent;
+                    &:hover {
+                        background-color: rgb(210, 210, 210);
+                    }
+                    @media (max-width: 500px) {
+                        width: 125px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 1150px) {
+            width: 90%;
+        }
+    }
+}

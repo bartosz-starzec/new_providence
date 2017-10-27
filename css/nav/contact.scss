@@ -1,0 +1,35 @@
+.contact {
+    height: 20px;
+    text-align: right;
+    padding-right: 35px;
+    // border: 1px solid red;
+    a {
+        img {
+            vertical-align: text-top;
+            width: 18px;
+        }
+        text-decoration: none;
+        color: #000;
+        padding-right: 30px;
+        &.button {
+            // border: 1px solid yellow;
+            padding: 12px 12px;
+            background-color: rgb(38, 125, 244);
+            border-radius: 30px;
+            color: #fff;
+            &:hover {
+                background-color: rgb(38, 100, 244);
+                color: #fff;
+            }
+        }
+        &.help {
+            color: rgb(199, 199, 200);
+        }
+        &:hover {
+            @include hover;
+        }
+    }
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}

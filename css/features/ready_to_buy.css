@@ -1,0 +1,104 @@
+.ready_to_buy {
+  background-color: #f5f5f8;
+  padding-top: 30px;
+  padding-bottom: 80px; }
+  .ready_to_buy .logo {
+    margin-right: auto;
+    margin-left: auto; }
+    .ready_to_buy .logo p.logo {
+      font-size: 0.9em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #a8a9af;
+      padding-bottom: 15px; }
+  .ready_to_buy .header_buy {
+    margin-right: auto;
+    margin-left: auto; }
+    .ready_to_buy .header_buy p.text {
+      text-align: center;
+      font-size: 3em;
+      padding-bottom: 30px; }
+  .ready_to_buy .form {
+    padding-bottom: 50px;
+    text-align: center; }
+    .ready_to_buy .form form input[type=text] {
+      outline: none;
+      width: 530px;
+      height: 30px;
+      padding: 7px;
+      padding-left: 15px;
+      border: 1px solid #cbcbce;
+      border-radius: 30px;
+      margin-right: -24px;
+      box-sizing: content-box; }
+      @media (max-width: 600px) {
+        .ready_to_buy .form form input[type=text] {
+          width: 400px;
+          margin-right: auto;
+          margin-left: auto; } }
+      @media (max-width: 450px) {
+        .ready_to_buy .form form input[type=text] {
+          width: 280px;
+          margin-right: auto;
+          margin-left: auto; } }
+      @media (max-width: 350px) {
+        .ready_to_buy .form form input[type=text] {
+          width: 260px; } }
+    .ready_to_buy .form form input[type=submit].arrow {
+      background: url("../img/features/arrow.png");
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
+      text-align: left;
+      width: 150px;
+      height: 40px;
+      margin-left: -134px;
+      background-color: #6fc754;
+      border: none;
+      color: #f8fcf7;
+      border-radius: 30px;
+      padding: 5px 0;
+      padding-left: 15px; }
+      .ready_to_buy .form form input[type=submit].arrow:focus {
+        outline: none; }
+      @media (max-width: 600px) {
+        .ready_to_buy .form form input[type=submit].arrow {
+          margin-top: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto; } }
+    .ready_to_buy .form form input[type=submit]:hover {
+      background-color: #6fbe54; }
+  .ready_to_buy .downloadFrom {
+    margin-left: auto;
+    margin-right: auto; }
+    .ready_to_buy .downloadFrom p.download {
+      text-align: center;
+      text-transform: uppercase;
+      color: #c9ccce; }
+  .ready_to_buy .appstore {
+    text-align: center; }
+    .ready_to_buy .appstore button[type=submit] {
+      width: 210px;
+      height: 60px;
+      border: none;
+      border-radius: 30px;
+      background-color: #000;
+      background-image: url("../img/nav/apple.png");
+      background-repeat: no-repeat;
+      background-position: 10% 40%;
+      background-size: 15%;
+      padding-top: 5px; }
+      .ready_to_buy .appstore button[type=submit] p {
+        padding-left: 15px; }
+        .ready_to_buy .appstore button[type=submit] p.text {
+          padding-top: 5px;
+          text-align: center;
+          color: #fff;
+          font-size: 0.8em; }
+          .ready_to_buy .appstore button[type=submit] p.text span {
+            margin-left: 0px;
+            margin-top: -7px;
+            display: block;
+            font-size: 1.8em; }
+
+/*# sourceMappingURL=ready_to_buy.css.map */
