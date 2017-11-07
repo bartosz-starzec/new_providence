@@ -1,11 +1,12 @@
 #new_providence
 
-<p>Simple one page site</p>
+<h1>Simple one page site</h1>
 
 To create this site I used following stuff:
 
 <li>-HTML</li>
--HTML
--SCSS
--JAVASCRIPT
--BOOTSTRAP
+<li>-SCSS</li>
+<li>-JAVASCRIPT</li>
+<li>-BOOTSTRAP</li>
+
+
