@@ -4,6 +4,7 @@
 
 To create this site I used following stuff:
 
+<li>-HTML</li>
 -HTML
 -SCSS
 -JAVASCRIPT
